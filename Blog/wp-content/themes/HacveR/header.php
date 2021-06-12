@@ -18,7 +18,13 @@
     <header>
         <!-- Here will be main navigation -->
         <nav>
-            
+            <img class="nav-logo" src="<?php echo get_template_directory_uri()?>/assets/images/logo_128x128.png" alt="logo "/>
+             <ul >
+                 <li><a href="#" ><img src="<?php echo get_template_directory_uri()?>/assets/images/powerbit_menu_icon_64x64.png"/><p>Blog</p></a> </li> 
+	                    <li><a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/about_menu_icon_64x64.png "/><p>About</p></a> </li> 
+	                    <li><a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/project_menu_icon_64x64.png "/><p>Projects</p></a> </li> 
+	                    <li><a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/images/contact_menu_icon_64x64.png "/><p>Contact</p></a> </li> 
+	     </ul>
         </nav>
         
     </header>
