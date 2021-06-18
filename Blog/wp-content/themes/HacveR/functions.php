@@ -1,9 +1,28 @@
 <?php
+// Utilities
+/* ***************************************************************************************************************** */
+
+
+
 function hacver_theme_support(){
     add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme','hacver_theme_support');
+
+
+function hacver_theme_menu(){
+    $locations = array(
+    'primary' => "Main menu",
+    'secondary' => "Secondary  menu Items"
+    );
+    register_nav_menus($locations);
+}
+
+add_action('init','hacver_theme_menu');
+// CSS and JS 
+/* ***************************************************************************************************************** */
+
 function hacver_register_style(){
     $version = wp_get_theme()->get('Version');
     
@@ -13,6 +32,8 @@ function hacver_register_style(){
 }
 
 add_action('wp_enqueue_scripts','hacver_register_style');
+
+
 
 function hacver_register_script(){
     
@@ -25,3 +46,5 @@ function hacver_register_script(){
 
 add_action('wp_enqueue_scripts','hacver_register_script');
 
+// 
+/* ***************************************************************************************************************** */
