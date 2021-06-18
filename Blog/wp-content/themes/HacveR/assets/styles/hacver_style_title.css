@@ -1,11 +1,37 @@
+/* ######################  BODY  ######################### */
+
+
 body{
 background-color: #E6F7FF;
+width: 70%;
+margin: 0 auto;
+background-color: white;
+}
+section {
+    margin: 5rem 2rem;
+}
+a{
+    color: blue;
+}
+a:hover{
+    color: darkorchid;
 }
 
-/* Navigation
-*/
+h1{
+    margin: 3rem;
+}
+h2{
+    margin: 2rem;
+}
+/* ######################  HEADER  ######################### */
+
+/* NAVIGATION */ 
+
+/* **** */
+.hacver-header {
+    background-color: rgba(190,190,190,0.2);
+}
 nav {
-    
     margin: 2rem 6rem;
 }
 
@@ -37,7 +63,42 @@ a img:hover {
     filter: saturate(10);
 }
 
+.top-space{
+    margin-top: 15rem;
+}
+/* NAVIGATION END*/ 
 
+
+
+/* ######################  MAIN CONTENT  ######################### */
+
+/* FRONT PAGE */ 
+
+/* FRONT PAGE END*/ 
+
+/* FRONT PROJECT */
+.project-icon{
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+}
+.project-desc h2{
+    
+}
+.project-desc span{
+    font-size: small;
+    color: blue;
+}
+.home-latest-projects h2{
+    margin:1rem 0;
+}
+
+/* FRONT PROJECT END*/
+
+
+
+/* ######################  FOOTER  ######################### */
 
 
 
