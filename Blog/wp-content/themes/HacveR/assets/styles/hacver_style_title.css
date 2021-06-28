@@ -8,10 +8,10 @@ margin: 0 auto;
 background-color: white;
 }
 section {
-    margin: 5rem 2rem;
+    margin: 5rem 0;
 }
 a{
-    color: blue;
+    color: #2977c9;
 }
 a:hover{
     color: darkorchid;
@@ -23,17 +23,31 @@ h1{
 h2{
     margin: 2rem;
 }
+h1 a, h2 a, h3 a{
+	    color: black;
+}
+
+/* Span categorys */
+.span-cat{
+    font-size: small;
+    color: #2977c9;
+}
+/* Global link style */ 
+a{
+    text-decoration: none; 
+}
 /* ######################  HEADER  ######################### */
 
 /* NAVIGATION */ 
 
 /* **** */
 .hacver-header {
-    background-color: rgba(190,190,190,0.2);
+    background-color: rgba(41, 119, 201, 0.5);
 }
 nav {
     margin: 2rem 6rem;
 }
+
 
 nav ul {
     float: right;
@@ -43,9 +57,7 @@ nav ul li{
 display: inline-block;
 }
 
-ul li a{
-    text-decoration: none; 
-}
+
 
 ul li a > p {
     text-align: center;
@@ -57,14 +69,18 @@ a p:hover{
 ul li a > img {
     margin: 2rem 1rem 0 1rem;
 }
-a img:hover {
-    scale: 1.2;
-    position: relative;
-    filter: saturate(10);
+nav img:hover {
+     transform: scale(1.5); 
 }
 
 .top-space{
     margin-top: 15rem;
+}
+/* logo image */
+nav img.nav-logo  {
+    margin: 2rem 1rem 0 1rem;
+    widows: 64px;
+    height: 64px;
 }
 /* NAVIGATION END*/ 
 
@@ -76,6 +92,16 @@ a img:hover {
 
 /* FRONT PAGE END*/ 
 
+/* BLOG */
+.blog-post p {
+	
+}
+.blog-post {
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+/* BLOG END */
+
 /* FRONT PROJECT */
 .project-icon{
     width: 64px;
@@ -86,13 +112,23 @@ a img:hover {
 .project-desc h2{
     
 }
-.project-desc span{
-    font-size: small;
-    color: blue;
+
+.hacver-projects-projectlist {
+	margin: 0;
 }
-.home-latest-projects h2{
-    margin:1rem 0;
+
+/* ASIDE  */
+ h1 {
+    font-size: xx-large;
 }
+
+
+ul, li{
+	list-style: none;
+}
+
+
+
 
 /* FRONT PROJECT END*/
 

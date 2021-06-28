@@ -33,7 +33,7 @@ class Walker_Nav_Primary extends Walker_Nav_Menu{
         $indent = ($depth)? str_repeat("\t", $depth) : '';
         $li_attributes='';
         $class_names = $value = '';
-        $custom_arg = esc_attr( $args->walker_arg );
+       
         
         $classes = empty($item->claasses) ? array() : (array) $item->classes;
         $classes[] = ($args->walker->has_children) ? 'dropdown' : '';
@@ -58,7 +58,7 @@ class Walker_Nav_Primary extends Walker_Nav_Menu{
     
     
         $attributes .= ($args->walker->has_children)? 'class="dropdown-toggle" data-toggle="dropdown"':'';
-        //$custom_arg = esc_attr( $args->walker_arg )
+        
         $item_output = $args->before;
         $item_output .= '<a'.$attributes.'>';
         $item_output .= $args->link_before . '<img width="64" height="64" src="'.get_template_directory_uri().'/assets/images/'. $item->title .'_256x256.png'. '" alt="' . $item->description . '" /><p>' . $args->link_after;
